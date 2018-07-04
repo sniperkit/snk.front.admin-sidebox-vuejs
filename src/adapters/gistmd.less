@@ -1,0 +1,89 @@
+.mdisviewer-show {
+  .mdisviewer_gist_only {
+    display: none;
+  }
+
+  .mdisviewer_gist_sidebar {
+    a.mdisviewer_toggle {
+      right: 12px;
+      top: 12px;
+      &:not(.mdisviewer_loading) > span:after {
+        content: data-uri('image/svg+xml;charset=UTF-8', './mdisvicons/chevron-left.svg');
+      }
+      &:not(.mdisviewer_loading):hover > span:after {
+        content: data-uri('image/svg+xml;charset=UTF-8', './mdisvicons/chevron-left-hover.svg');
+      }
+    }
+  }
+
+  body.split-diff .container {
+    padding-left: 0;
+  }
+}
+
+.mdisviewer_gist_sidebar {
+  padding-top: 54px;
+  background-color: #f7f7f7;
+  border-right: none;
+
+  .mdisviewer_gist_only {
+    display: block;
+  }
+
+  .mdisviewer_views {
+    border-right: 1px solid #ddd;
+    background-color: #fff;
+
+    .mdisviewer_view {
+      .mdisviewer_header {
+        font-weight: normal;
+        text-shadow: none;
+        height: 54px;
+        line-height: 2.8;
+        background: #fafbfc none;
+        border-right: 1px solid #e1e4e8;
+        border-bottom: 1px solid #e1e4e8;
+      }
+    }
+
+    .mdisviewer_indexview {
+      .mdisviewer_header_title {
+        font-size: 13px;
+        font-weight: normal;
+      }
+    }
+
+  }
+
+  a.mdisviewer_toggle, a.mdisviewer_opts {
+    color: black !important;
+
+    &:hover, &.selected {
+      color: #0366d6 !important;
+    }
+  }
+
+  a.mdisviewer_opts {
+    top: 19px;
+    right: 48px;
+    width: 14px;
+    height: 16px;
+    background: data-uri('image/svg+xml;charset=UTF-8', './mdisvicons/gear.svg');
+    &:hover {
+      background: data-uri('image/svg+xml;charset=UTF-8', './mdisvicons/gear-hover.svg');
+    }
+  }
+
+	a.mdisviewer_toggle {
+    top: 12px;
+    right: -35px;
+
+    &:not(.mdisviewer_loading) > span:after {
+      content: data-uri('image/svg+xml;charset=UTF-8', './mdisvicons/chevron-right.svg');
+    }
+    &:not(.octotree_loading):hover > span:after {
+      content: data-uri('image/svg+xml;charset=UTF-8', './mdisvicons/chevron-right-hover.svg');
+    }
+  }
+
+}
