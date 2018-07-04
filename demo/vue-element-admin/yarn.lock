@@ -3099,6 +3099,10 @@ get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
 
+get-youtube-id@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/get-youtube-id/-/get-youtube-id-1.0.0.tgz#367680848a29842635a68227c2d10b0a4924560f"
+
 getpass@^0.1.1:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/getpass/-/getpass-0.1.7.tgz#5eff8e3e684d569ae4cb2b1282604e8ba62149fa"
@@ -4218,6 +4222,10 @@ load-json-file@^2.0.0:
     parse-json "^2.2.0"
     pify "^2.0.0"
     strip-bom "^3.0.0"
+
+load-script@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
 
 loader-fs-cache@^1.0.0:
   version "1.0.1"
@@ -6379,6 +6387,10 @@ simplemde@1.11.2:
     codemirror-spell-checker "*"
     marked "*"
 
+sister@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/sister/-/sister-3.0.1.tgz#a36ba6a1d1e46415ba16cb4ecefe14cbd8d82d1f"
+
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -7296,11 +7308,18 @@ vue-worker@^1.2.1:
   dependencies:
     simple-web-worker "1.2.0"
 
+vue-youtube@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/vue-youtube/-/vue-youtube-1.2.5.tgz#f1bbbd97bac80a43589b749bfb2bf5caebbe04fa"
+  dependencies:
+    get-youtube-id "^1.0.0"
+    youtube-player "^5.4.0"
+
 vue@2.5.10:
   version "2.5.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.10.tgz#dcd772e2594ba994145f2f09522149d9a1e7841a"
 
-vue@^2.3.0:
+vue@^2.3.0, vue@^2.5.14:
   version "2.5.16"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
 
@@ -7310,6 +7329,13 @@ vuedraggable@^2.16.0:
   dependencies:
     sortablejs "^1.7.0"
 
+vuex-iframe-sync@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/vuex-iframe-sync/-/vuex-iframe-sync-1.4.3.tgz#c3466435474f76c236d363a97f0854950d7d6c72"
+  dependencies:
+    vue "^2.5.14"
+    vuex "^3.0.1"
+
 vuex-search@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/vuex-search/-/vuex-search-2.2.1.tgz#fd4548acbded246a6b996a0ed5da9a853b157e10"
@@ -7317,7 +7343,7 @@ vuex-search@^2.2.1:
     bluebird "^3.5.1"
     js-worker-search "^1.2.1"
 
-vuex@3.0.1:
+vuex@3.0.1, vuex@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.0.1.tgz#e761352ebe0af537d4bb755a9b9dc4be3df7efd2"
 
@@ -7652,6 +7678,14 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+youtube-player@^5.4.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/youtube-player/-/youtube-player-5.5.0.tgz#95f058534f9544586185551d0d2d33f381f6587a"
+  dependencies:
+    debug "^2.6.6"
+    load-script "^1.0.0"
+    sister "^3.0.0"
 
 zrender@3.7.4:
   version "3.7.4"
