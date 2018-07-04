@@ -15,14 +15,14 @@ module.exports = {
     name: {
       type: 'string',
       required: true,
-      default: 'vue-webpack-chrome-extension-template',
+      default: 'snk.front.admin-sidebox-vuejs-template',
       message: 'Project name'
     },
     description: {
       type: 'string',
       required: true,
       label: 'Project description',
-      default: 'A Chrome extension project with Vue.js'
+      default: 'A Chrome extension project with Vue.js and Vue Admin with Element UI'
     },
     author: {
       type: 'string',
