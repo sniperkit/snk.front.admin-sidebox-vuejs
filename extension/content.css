@@ -1,0 +1,37 @@
+.npmhub-deps {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important; /* gitlab */
+  font-size: 13px;
+}
+.npmhub-deps > li {
+  padding: 10px;
+  border-bottom: 1px solid #DDD;
+}
+.npmhub-deps > li:last-child {
+  border-bottom: none;
+}
+li.npmhub-empty {
+  opacity: 0.6;
+}
+.npmhub-deps em {
+  color: darkgray;
+}
+.npmhub-header .btn {
+  position: relative;
+  z-index: 1; /* Necessary for GitLab */
+  float: right;
+  margin: 5px;
+  margin-left: 0;
+}
+.npmhub-deps:empty:before {
+  display: block;
+  content: "loading";
+  padding: 10px;
+  animation: npmhub-pulse 1s infinite;
+}
+@keyframes npmhub-pulse {
+  50% {
+    opacity : 0.5;
+  }
+}
