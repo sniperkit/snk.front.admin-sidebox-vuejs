@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
     }
   },
@@ -25,7 +25,7 @@ export default {
     'effect'
   ],
   methods: {
-    menuEffect () {
+    menuEffect() {
       // console.log('self.effect', self.effect)
       // console.log('this.effect', this.effect)
       this.effect = this.effect
@@ -34,7 +34,7 @@ export default {
       // console.log('this.effect', this.effect)
       // console.log('this.state', this.state)
     },
-    closeMenu () {
+    closeMenu() {
       if (this.state) {
         // console.log('closeMenu')
         this.$emit('close-event')
